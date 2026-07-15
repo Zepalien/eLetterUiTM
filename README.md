@@ -1,58 +1,33 @@
-# CakePHP Application Skeleton
+UiTM e-Letter System 
 
-![Build Status](https://github.com/cakephp/app/actions/workflows/ci.yml/badge.svg?branch=5.x)
-[![Total Downloads](https://img.shields.io/packagist/dt/cakephp/app.svg?style=flat-square)](https://packagist.org/packages/cakephp/app)
-[![PHPStan](https://img.shields.io/badge/PHPStan-level%208-brightgreen.svg?style=flat-square)](https://github.com/phpstan/phpstan)
+UiTM e-Letter is a web-based, digital official letter generation and management system developed to streamline how UiTM students request and receive official academic/administrative letters (such as Internship Applications, Fieldwork Permissions, or Event Approval letters).
 
-A skeleton for creating applications with [CakePHP](https://cakephp.org) 5.x.
+---
 
-The framework source code can be found here: [cakephp/cakephp](https://github.com/cakephp/cakephp).
+- Key Features
 
-## Installation
+> For Students
+* Live AJAX Template Preview: Real-time visual drafting of official letters directly on the submission form as the student fills in details or changes templates.
+* Supporting Document Upload: Option to upload prerequisite files (e.g., proposal or approval sheets) with automated on-server directory structures.
+* Interactive Request Tracking: Status-monitoring portal for personal requests (Pending, Approved, or Rejected).
+* PDF Export: Instant download of clean, university-standard official letters in PDF format once approved.
 
-1. Download [Composer](https://getcomposer.org/doc/00-intro.md) or update `composer self-update`.
-2. Run `php composer.phar create-project --prefer-dist cakephp/app [app_name]`.
+> For Administrators / Staff
+* Dynamic Letter Templates: Easy creation and updating of letter paragraphs utilizing a dynamic placeholder system (e.g., `{STUDENT_NAME}`, `{COMPANY_NAME}`).
+* Streamlined Approval Workflow: Quick interfaces to review incoming requests, assign specific signatories, and update statuses.
+* Dynamic Signatory Assignment: Admin can attach dynamic signatures/profiles (e.g., Dean, Deputy Dean, Senior Lecturer) to the final generated PDF.
 
-If Composer is installed globally, run
+---
 
-```bash
-composer create-project --prefer-dist cakephp/app
-```
+Installation & Setup (Local)
 
-In case you want to use a custom app dir name (e.g. `/myapp/`):
+Follow these steps to deploy and run this project in your local development environment:
+1. Prerequisites
+Ensure you have the following installed:
+* PHP >= 8.1 
+* Composer
+* Web Server (XAMPP / Laragon)
+ 2. Clone the Repository
+https://github.com/Zepalien/eLetterUiTM
 
-```bash
-composer create-project --prefer-dist cakephp/app myapp
-```
-
-You can now either use your machine's webserver to view the default home page, or start
-up the built-in webserver with:
-
-```bash
-bin/cake server -p 8765
-```
-
-Then visit `http://localhost:8765` to see the welcome page.
-
-## Demo app
-
-Check out the [5.x-demo branch](https://github.com/cakephp/app/tree/5.x-demo), which contains demo migrations and a seeder.
-See the [README](https://github.com/cakephp/app/blob/5.x-demo/README.md) on how to get it running.
-
-## Update
-
-Since this skeleton is a starting point for your application and various files
-would have been modified as per your needs, there isn't a way to provide
-automated upgrades, so you have to do any updates manually.
-
-## Configuration
-
-Read and edit the environment specific `config/app_local.php` and set up the
-`'Datasources'` and any other configuration relevant for your application.
-Other environment agnostic settings can be changed in `config/app.php`.
-
-## Layout
-
-The app skeleton uses [Milligram](https://milligram.io/) (v1.3) minimalist CSS
-framework by default. You can, however, replace it with any other library or
-custom styles.
+To see the live how the website work : https://eletter.page.gd/ 
